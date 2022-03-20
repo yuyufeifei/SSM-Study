@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- 普通注入 -->
+<!--    <bean id="cat" class="com.gzh.entity.Cat"/>-->
+<!--    <bean id="dog" class="com.gzh.entity.Dog"/>-->
+<!--    <bean id="people" class="com.gzh.entity.People">-->
+<!--        <property name="name" value="gzh"/>-->
+<!--        <property name="cat" ref="cat"/>-->
+<!--        <property name="dog" ref="dog"/>-->
+<!--    </bean>-->
+
+    <!-- autowire byName 自动在容器上下文中查找与对象set方法后面的值对应的beanId，且需保证beanId唯一 -->
+<!--    <bean id="cat" class="com.gzh.entity.Cat"/>-->
+<!--    <bean id="dog" class="com.gzh.entity.Dog"/>-->
+<!--    <bean id="people" class="com.gzh.entity.People" autowire="byName">-->
+<!--        <property name="name" value="gzh"/>-->
+<!--    </bean>-->
+
+    <!-- autowire byType 自动在容器上下文中查找与自己对象属性类型相同的bean，且需保证bean的class唯一 -->
+<!--    <bean class="com.gzh.entity.Cat"/>-->
+<!--    <bean class="com.gzh.entity.Dog"/>-->
+<!--    <bean id="people" class="com.gzh.entity.People" autowire="byType">-->
+<!--        <property name="name" value="gzh"/>-->
+<!--    </bean>-->
+
+</beans>
